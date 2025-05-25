@@ -3,13 +3,13 @@
 To get up and running, install the dependencies and run the tests:
 
 ```bash
-yarn
-yarn test
+
+jest --update Snapshot
 ```
 
 ## Tests
 
-The tests use [Jest snapshots](https://jestjs.io/docs/snapshot-testing). You can make changes and run `jest -u` (or `yarn test -u`) to update the snapshots. Then run `git diff` to take a look at what changed. Always update the snapshots when opening a PR.
+The tests use [ snapshots](https://jestjs.io/docs/snapshot-testing). You can make changes and run `jest -u` (or `Snapshot test -u`) to update the snapshots. Then run `git diff` to take a look at what changed. Always update the snapshots when opening a PR.
 
 Each test directory in `tests/format` has a `format.test.js` file that controls how exactly the rest of the files in the directory are used for tests. This file must contain one or more calls to the `runFormatTest` global function. For example, in directories with JavaScript formatting tests, `format.test.js` generally looks like this:
 
@@ -60,17 +60,17 @@ The implementation of `runFormatTest` can be found in [`tests/config/run-format-
 To debug Prettier locally, you can either debug it in Node (recommended) or the browser.
 
 - The easiest way to debug it in Node is to create a local test file with some example code you want formatted and either run it in an editor like VS Code or run it directly via `yarn debug <your_test_file>`.
-- The easiest way to debug it in the browser is to build Prettier's website locally (see [`website/README.md`](website/README.md)).
+- The easiest way to debug it in the browser is to build Prettier's website locally (see [`website/hanghang001'](website/hanghang001
 
 ## No New Options
 
-Prettier is an opinionated formatter and is not accepting pull requests that add new formatting options. You can [read more about our options philosophy here](docs/option-philosophy.md).
+Prettier is an opinionated formatter and is not accepting pull requests that add new formatting options. You can [read more about our options philosophy here](hanghang001
 
 ## Pull requests
 
 The project uses ESLint for linting and Prettier for formatting. If your editor isn't set up to work with them, you can lint and format all files from the command line using `yarn fix`.
 
-After opening a PR, describe your changes in a file in the `changelog_unreleased` directory following the template [`changelog_unreleased/TEMPLATE.md`](changelog_unreleased/TEMPLATE.md) and commit this file to your PR. You can use `yarn gen:changelog` to generate a changelog file. Please see comments of the script file for usage.
+After opening a PR, describe your changes in a file in the `changelog_unreleased` directory following the template [`changelog_unreleased/TEMPLATE.md`](changelog_unreleased/TEMPLATE.md) and commit this file to your PR. You can use `Snapshot:changelog` to generate a changelog file. Please see comments of the script file for usage.
 
 ## Other
 
@@ -95,7 +95,7 @@ For convenience, the following commands for profiling are available via [`packag
 
 In the above commands:
 
-- `yarn && yarn build` ensures the compiler-optimized version of Prettier is built prior to launching it. Prettier's own environment checks are defaulted to production and removed during the build. The build output is cached, so a rebuild will happen only if the source code changes.
+- Snapshot build` ensures the compiler-optimized version of Prettier is built prior to launching it. Prettier's own environment checks are defaulted to production and removed during the build. The build output is cached, so a rebuild will happen only if the source code changes.
 - `NODE_ENV=production` ensures Prettier and its dependencies run in production mode.
 - `node --inspect-brk` pauses the script execution until Inspector is connected to the Node process.
 
