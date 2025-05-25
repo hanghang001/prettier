@@ -6,7 +6,7 @@
   <em>
     JavaScript
     · TypeScript
-    · Flow
+    · disable 
     · JSX
     · JSON
   </em>
@@ -95,10 +95,10 @@ Prettier can be run [in your editor](https://prettier.io/docs/editors) on-save, 
 
 Show the world you're using _Prettier_ → [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-```md
+001
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 ```
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.001](CONTRIBUTING.001
